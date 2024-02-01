@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background: #ffdad2;
+    overflow-y: hidden;
+}
+.conatiner{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conatiner form{
+display: flex;
+flex-direction: column;
+align-items: start;
+gap: 10px;
+}
+
+ h2{
+    margin-top: 20px;
+font-weight: 600;
+color: #a363aa;
+font-size: 35px;
+
+transition: 0.5s;
+
+}
+h2:hover{
+    color: transparent;
+    font-size: 40px;
+}
+hr{
+     height: 5px;
+     border: none;
+
+    width: 120px;
+   background-color: #a363aa;
+    border-radius: 10px;
+  margin-bottom: 15px;
+  
+}
+.contact-inputs{
+   width: 250px;
+   height: 30px;
+   outline: none;
+   margin-top: 5px;
+   border: none;
+   padding-left: 15px;
+   font-weight: 600;
+   color: #666;
+   border-radius: 25px;
+}
+.contact-inputs:focus{
+border: 2px solid #ff994f;
+}
+.contact-inputs::placeholder{
+  color: #a9a9a9;
+}
+.contact-input{
+  margin-top: 5px;
+    outline: none;
+    border: none;
+   padding-left: 15px;
+   font-weight: 600;
+   color: #666;
+  padding-top: 5px;
+  border-radius: 25px;
+ 
+}
+.contact-input:focus{
+  border: 2px solid #ff994f;
+  }
+  .contact-input::placeholder{
+    color: #a9a9a9;
+  }
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  color: #fff;
+    font-weight: 600;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+   border: none;
+    margin-left: 30px;
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+  
+}
+
+button img{
+  height: 15px;
+  padding: 2px 5px;
+}
+p{
+    color: #7f0e8b;
+font-size: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-bottom: 20px;
+}
+.wrapper{
+display: inline-flex;
+
+}
+.wrapper .dynamic-txts{
+  margin-left: 5px;
+   height: 45px;
+   line-height: 100px;
+   overflow: hidden;
+}
+.dynamic-txts li{
+   
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    top: 0;
+    color: #56035f;
+    position: relative;
+    animation: slide 10s steps(11) infinite;
+}
+@keyframes slide{
+    100%{
+      top: -370px;
+
+    }
+}
+@media (max-width:800px){
+  .conatct-inputs{
+    width: 80vw;
+  }
+  .conatct-input{
+    width: 80vw;
+  }
+  .contact-right{
+    display: none;
+   
+  }
+
+}
